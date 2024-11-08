@@ -11,10 +11,10 @@ namespace TodoServerApp.Data
 		{
 			base.OnModelCreating(builder);
 			builder.Entity<TaskItem>().HasData([
-					new() { Id = 1, Title = "Задача 1", Description = "Описание задачи 1", CreateDate = DateTime.Now},
-					new() { Id = 2, Title = "Задача 2", Description = "Описание задачи 2", CreateDate = DateTime.Now},
-					new() { Id = 3, Title = "Задача 3", Description = "Описание адачи 3", CreateDate = DateTime.Now},
-					new() { Id = 4, Title = "Задача 4", Description = "Описание адачи 4", CreateDate = DateTime.Now}
+					new() { Id = 1, Title = "Задача 1", Description = "Описание задачи 1", CreatedDate = DateTime.Now},
+					new() { Id = 2, Title = "Задача 2", Description = "Описание задачи 2", CreatedDate = DateTime.Now},
+					new() { Id = 3, Title = "Задача 3", Description = "Описание адачи 3", CreatedDate = DateTime.Now},
+					new() { Id = 4, Title = "Задача 4", Description = "Описание адачи 4", CreatedDate = DateTime.Now}
 				]);
 		}
 	}
